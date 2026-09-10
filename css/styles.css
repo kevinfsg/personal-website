@@ -1,0 +1,117 @@
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;              /* Extra bold look */
+  font-size: 4.5rem;             /* Make it huge */
+  line-height: 1.05;             /* Tight line spacing */
+  letter-spacing: -1px; 
+}
+
+h3, h4, h5, p, a {
+  font-family: "DIN Condensed"; 
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*intro image section*/
+.introimage {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("../img/magazine.jpg") center/cover no-repeat;
+}
+/* NAVBAR DEFAULT (ON IMAGE) */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-family: "DIN Condensed";
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+
+.navbar .nav-link:hover {
+  color: #ddd;
+}
+
+/* NAVBAR AFTER SCROLL */
+.navbar.scrolled {
+  background-color: black;
+}
+
+/* NAME POSITIONING */
+.introimage-text {
+  position: absolute;
+  bottom: 20px;
+  Left: 40px;
+  color: white;
+}
+.about-box {
+  position: relative; /* anchor for the image */
+}
+
+.about-bg {
+  position: absolute;
+  top: -10px;
+  left: -10px;   /* 👈 puts it top-left */
+  width: 200%;
+  max-width: 600px; /* control size */
+  z-index: 1;
+}
+
+.about-me,
+.about-me-text {
+  position: relative;
+  z-index: 2; /* text stays on top */
+}
+
+.fixed-carousel,
+.fixed-carousel .carousel-inner,
+.fixed-carousel .carousel-item {
+  height: 350px;
+}
+
+.fixed-carousel img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.introimage-text h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.about-me-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-me {
+  font-size: 5rem;
+}
+
+.about-me-text { 
+  color:gray;
+}
+
+.face-picture {
+  width: 120px;   
+  height: auto;
+}
+
+.crafts {
+  padding-top: 20px;
+  font-size: 6rem;
+}
+
+.craftsprt1{ 
+  width: 300px;   
+  height: auto;
+}
+
+
+
