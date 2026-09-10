@@ -16,8 +16,8 @@ h3, h4, h5, p, a {
 /*intro image section*/
 .introimage {
   position: relative;
-  height: 100vh;
   width: 100%;
+  aspect-ratio: 16 / 9;
   background: url("../img/magazine.jpg") center/cover no-repeat;
 }
 /* NAVBAR DEFAULT (ON IMAGE) */
@@ -49,26 +49,27 @@ h3, h4, h5, p, a {
   color: white;
 }
 .about-box {
-  position: relative; /* anchor for the image */
+  position: relative;
+  min-height: 450px;
 }
 
 .about-bg {
   position: absolute;
-  top: -10px;
-  left: -10px;   /* puts it top-left */
   width: 200%;
-  max-width: 600px; /* control size */
+  max-width: 700px;
   z-index: 1;
 }
 
-.about-me,
-.about-me-text {
-  position: relative;
-  z-index: 2; /* text stays on top */
-}
+.camera {
+  width: 300px;
+  height: auto;
+  display: block;
 
+  position: relative;
+  z-index: 2;
+}
 .introimage-text h1 {
-  font-size: 6rem;
+  font-size: clamp(2rem, 8vw, 6rem);
   margin: 0;
 }
 
@@ -77,10 +78,11 @@ h3, h4, h5, p, a {
   padding-bottom: 50px;
 }
 
-.about-me {
-  font-size: 5rem;
-}
-
-.about-me-text { 
-  color:gray;
+@media (max-width: 767px) {
+  .about-bg {
+    width: 100%;
+    max-width: none;
+    padding-left: 30px;
+    left: 0;
+  }
 }
