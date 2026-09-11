@@ -85,4 +85,11 @@ h3, h4, h5, p, a {
     padding-left: 30px;
     left: 0;
   }
+
+  .navbar .nav-link {
+    color: white;
+    font-family: "DIN Condensed";
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
 }
