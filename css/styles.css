@@ -92,4 +92,9 @@ h3, h4, h5, p, a {
     font-size: 1.5rem;
     margin-left: 10px;
   }
+
+  .about-box {
+    position: relative;
+    min-height: 310px;
+  }
 }
